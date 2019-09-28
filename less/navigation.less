@@ -1,1 +1,46 @@
 // Navigation code here
+
+.container-nav {
+  width: 100%;
+  @media @phone {
+    width: 89%;
+  }
+}
+
+.nav {
+  border: 2px solid red;
+  .displayflex(column, center, center);
+  padding: 25px 0px 10px 0px;
+  background: @nav-bg;
+  border: @nav-border;
+  position: fixed; 
+  top: 0;
+  opacity: 0.9;
+  
+  .nav-box{
+    // border: 2px solid red;
+    width: 100%;
+    margin: 2%;
+    text-align: center;
+
+    a {
+    color: @main-font-color;
+    margin: 4%;
+    /* Nav bar animation  */
+   &::after {
+    content: ' '; 
+    display: inline-block;
+    width: 0;
+    height: 3px;
+    background:@ebony-clay;
+    transition: width .2s;
+  }
+
+  &:hover::after {
+    width: 5%;
+    transition: width .2s;
+  }
+  }
+  }
+  
+}

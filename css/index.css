@@ -1,0 +1,496 @@
+.hover {
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {
+    background-color: #23293B;
+  }
+  to {
+    background-color: green;
+  }
+}
+.contact-hover {
+  cursor: text;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #23293B;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+a {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  width: auto;
+}
+@media (max-width: 700px) {
+  body {
+    margin: 5%;
+  }
+}
+.container-nav {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .container-nav {
+    width: 89%;
+  }
+}
+.nav {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px 10px 0px;
+  background: #F6F6F6;
+  border: #F1F1F1;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+}
+.nav .nav-box {
+  width: 100%;
+  margin: 2%;
+  text-align: center;
+}
+.nav .nav-box a {
+  color: #5E6164;
+  margin: 4%;
+  /* Nav bar animation  */
+}
+.nav .nav-box a::after {
+  content: ' ';
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background: #23293B;
+  transition: width 0.2s;
+}
+.nav .nav-box a:hover::after {
+  width: 5%;
+  transition: width 0.2s;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  margin-top: 180px;
+}
+@media (max-width: 700px) {
+  .home {
+    margin-top: 118px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro img {
+  width: 99%;
+  border-radius: 5px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .home .space-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .home .space-images img {
+    width: 100%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text a {
+  color: white;
+}
+.home .walk .walk-text .btn {
+  text-align: center;
+  color: white;
+  background-color: #23293B;
+  padding: 10px;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {
+    background-color: #23293B;
+  }
+  to {
+    background-color: green;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .home .walk {
+    flex-direction: column;
+  }
+  .home .walk .walk-text {
+    order: 1;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    text-align: center;
+    color: white;
+    background-color: #23293B;
+    padding: 25px;
+    border-radius: 5px;
+  }
+  .home .walk .walk-text .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: white;
+    background-color: green;
+    padding: 25px;
+    border-radius: 5px;
+    animation-name: example;
+    animation-duration: 1s;
+  }
+  @keyframes example {
+    from {
+      background-color: #23293B;
+    }
+    to {
+      background-color: green;
+    }
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: -4%;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+.main-content {
+  /* border: 2px solid red; */
+  margin: 10%;
+  margin-top: 250px;
+}
+@media (max-width: 700px) {
+  .main-content {
+    margin-top: 118px;
+  }
+}
+.main-content .intro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .intro .intro-box {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+.main-content .boxed-content {
+  margin: 0% 20% 0% 20%;
+}
+.main-content .boxed-content p {
+  padding: 10px;
+}
+.main-content .boxed-content .row1,
+.main-content .boxed-content .row2,
+.main-content .boxed-content .row3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content .boxed-content .row3 {
+  justify-content: flex-start;
+  margin: 0% 4% 0% 4%;
+}
+.main-content .boxed-content .row1 .box {
+  background-color: #F1F1F1;
+  width: 40%;
+  height: auto;
+  padding-left: 10px;
+  margin: 3% 0% 3% 0%;
+}
+.main-content .boxed-content .row1 .box:hover {
+  cursor: text;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #23293B;
+}
+.main-content .boxed-content .row2 .box {
+  background-color: #F1F1F1;
+  width: 90%;
+  height: auto;
+  padding-left: 10px;
+  margin: 3% 0% 3% 0%;
+}
+.main-content .boxed-content .row2 .box:hover {
+  cursor: text;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #23293B;
+}
+.main-content .boxed-content .row3 {
+  justify-content: space-evenly;
+}
+.main-content .boxed-content .row3 .btn {
+  text-align: center;
+  color: white;
+  background-color: #23293B;
+  padding: 15px;
+  border-radius: 5px;
+}
+.main-content .boxed-content .row3 .btn:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: white;
+  background-color: green;
+  padding: 15px;
+  border-radius: 5px;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {
+    background-color: #23293B;
+  }
+  to {
+    background-color: green;
+  }
+}

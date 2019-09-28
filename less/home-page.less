@@ -2,6 +2,12 @@
 
 .home {
 
+  margin-top: 180px;
+  
+  @media @phone {
+    margin-top: 118px;
+  }
+
   .intro {
     // border: 2px solid red;
     h2 {
@@ -80,6 +86,9 @@
       p {
         margin-bottom: 26px;
       }
+      a {
+        color: white;
+      }
 
       .btn {
         .button(white, @button-bg, 10px, 5px);
@@ -110,7 +119,6 @@
       .walk-text {
         order: 1;
         width: 100%;
-
         .btn {
           .button(white, @button-bg, 25px, 5px);
         }

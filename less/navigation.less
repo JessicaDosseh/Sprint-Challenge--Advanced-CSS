@@ -1,23 +1,26 @@
 // Navigation code here
 
 .container-nav {
-  // max-width: 800px;
-  width: 98%;
-  margin: 0 auto;  
-  margin-top: 20px;
+  width: 100%;
+  @media @phone {
+    width: 89%;
+  }
 }
 
 .nav {
   border: 2px solid red;
   .displayflex(column, center, center);
-  padding: 20px 0px 10px 0px;
+  padding: 25px 0px 10px 0px;
   background: @nav-bg;
   border: @nav-border;
-
+  position: fixed; 
+  top: 0;
+  opacity: 0.9;
+  
   .nav-box{
     // border: 2px solid red;
     width: 100%;
-    margin: 2.5%;
+    margin: 2%;
     text-align: center;
 
     a {

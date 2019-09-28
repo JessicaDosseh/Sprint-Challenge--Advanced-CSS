@@ -1,1 +1,43 @@
 // Navigation code here
+
+.container-nav {
+  // max-width: 800px;
+  width: 98%;
+  margin: 0 auto;  
+  margin-top: 20px;
+}
+
+.nav {
+  border: 2px solid red;
+  .displayflex(column, center, center);
+  padding: 20px 0px 10px 0px;
+  background: @nav-bg;
+  border: @nav-border;
+
+  .nav-box{
+    // border: 2px solid red;
+    width: 100%;
+    margin: 2.5%;
+    text-align: center;
+
+    a {
+    color: @main-font-color;
+    margin: 4%;
+    /* Nav bar animation  */
+   &::after {
+    content: ' '; 
+    display: inline-block;
+    width: 0;
+    height: 3px;
+    background:@ebony-clay;
+    transition: width .2s;
+  }
+
+  &:hover::after {
+    width: 5%;
+    transition: width .2s;
+  }
+  }
+  }
+  
+}

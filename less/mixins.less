@@ -1,1 +1,33 @@
 // Mixins Here
+
+.displayflex (@direction, @justify, @align) {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: @direction; 
+  justify-content: @justify; 
+  align-items: @align;
+}
+
+.button (@color, @bg-color, @pix, @radius){ 
+  text-align: center;
+  color: @color;
+  background-color: @bg-color;
+  padding: @pix;
+  border-radius: @radius;
+}
+
+.hover {
+  animation-name: example;
+  animation-duration: 1s;
+
+  @keyframes example {
+    from {background-color: @button-bg}
+    to {background-color: green;}
+  }
+}
+
+.contact-hover {
+    cursor: text;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 2px solid @ebony-clay;
+}
